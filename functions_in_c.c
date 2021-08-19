@@ -156,8 +156,8 @@ int even_odd(int n)
 //Different Memory is allocated for both actual and formal parameters. Because, value of actual parameter is copied to formal parameter.
 //Note:
 //
-//Actual parameter ñ This is the argument which is used in function call.
-//Formal parameter ñ This is the argument which is used in function definition
+//Actual parameter ‚Äì This is the argument which is used in function call.
+//Formal parameter ‚Äì This is the argument which is used in function definition
 
 
 
@@ -166,8 +166,8 @@ int even_odd(int n)
 //The value of the actual parameter can be modified by formal parameter.
 //Same memory is used for both actual and formal parameters since only address is used by both parameters.
 //EXAMPLE PROGRAM FOR C FUNCTION (USING CALL BY REFERENCE):
-//In this program, the address of the variables ìmî and ìnî are passed to the function ìswapî.
-//These values are not copied to formal parameters ìaî and ìbî in swap function.
+//In this program, the address of the variables ‚Äúm‚Äù and ‚Äún‚Äù are passed to the function ‚Äúswap‚Äù.
+//These values are not copied to formal parameters ‚Äúa‚Äù and ‚Äúb‚Äù in swap function.
 //Because, they are just holding the address of those variables.
 //This address is used to access and change the values of the variables.
 
@@ -176,61 +176,17 @@ int even_odd(int n)
 //DO YOU KNOW HOW MANY VALUES CAN BE RETURN FROM C FUNCTIONS?
 //Always, Only one value can be returned from a function.
 //If you try to return more than one values from a function, only one value will be returned that appears at the right most place of the return statement.
-//For example, if you use ìreturn a,b,cî in your function, value for c only will be returned and values a, b wonít be returned to the program.
+//For example, if you use ‚Äúreturn a,b,c‚Äù in your function, value for c only will be returned and values a, b won‚Äôt be returned to the program.
 //In case, if you want to return more than one values, pointers can be used to directly change the values in address instead of returning those values to the function.
 
 
 
 
-//Command line codes
-//main() function of a C program accepts arguments from command line or from other shell scripts by
-//following commands. They are: -
-//argc
-//argv[]
-//where,
-//
-//argc    ñ Number of arguments in the command line including program name
-//argv[]   ñ This is carrying all the arguments
-
-
-//In real time application, it will happen to pass arguments to the main program itself.
-//These arguments are passed to the main () function while executing binary file from command line.
-//For example, when we compile a program (test.c), we get executable file in the name ìtestî.
-//Now, we run the executable ìtestî along with 4 arguments in command line like below.
-//./test this is a program
-
-//Where,
-//argc             =       5
-//argv[0]         =       ìtestî
-//argv[1]         =       ìthisî
-//argv[2]         =       ìisî
-//argv[3]         =       ìaî
-//argv[4]         =       ìprogramî
-//argv[5]         =       NULL
 
 
 
-#include <stdio.h>
-#include <stdlib.h>
- 
-int main(int argc, char *argv[])   //  command line arguments
-{
-if(argc!=5) 
-{
-   printf("Arguments passed through command line " \
-          "not equal to 5");
-   return 1;
-}
- 
-   printf("\n Program name  : %s \n", argv[0]);
-   printf("1st arg  : %s \n", argv[1]);
-   printf("2nd arg  : %s \n", argv[2]);
-   printf("3rd arg  : %s \n", argv[3]);
-   printf("4th arg  : %s \n", argv[4]);
-   printf("5th arg  : %s \n", argv[5]);
- 
-return 0;
-}
+
+
 
 
 //Prime numbers between two numbers
